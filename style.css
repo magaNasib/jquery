@@ -1,0 +1,76 @@
+body {
+  background: #35b5f7;
+  height: 3496px;
+}
+.cursor:after {
+  content: "_";
+  opacity: 0;
+  animation: cursor 1s infinite;
+}
+#test {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: serif;
+  display: block;
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.load {
+  position: fixed;
+  width: 100%;
+  top: 150px;
+}
+.dot {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
+  background: #fff;
+  overflow: hidden;
+  text-align: center;
+
+  box-sizing: border-box;
+  border: 5px solid #fff;
+}
+#hello {
+  font-size: 32px;
+  color: #ccc;
+  font-family: arial;
+  border-radius: 50%;
+  opacity: 0;
+}
+.yellow {
+  position: absolute;
+  background: #f9b90c;
+
+  width: 0;
+  height: 0;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  overflow: hidden;
+}
+.yellow h1 {
+  font-size: 20px;
+  color: #fff;
+  font-family: arial;
+  opacity: 0;
+}
